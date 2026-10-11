@@ -1,0 +1,56 @@
+{
+  "data_quality": {
+    "rows": 7043,
+    "duplicate_ids": 0,
+    "blank_total_charges": 11
+  },
+  "churn_rate": 0.2654,
+  "churn_by_contract": {
+    "Month-to-month": 0.4271,
+    "One year": 0.1127,
+    "Two year": 0.0283
+  },
+  "churn_by_tenure": {
+    "0-12 m": 0.4744,
+    "13-24 m": 0.2871,
+    "25-48 m": 0.2039,
+    "49-72 m": 0.0951
+  },
+  "churn_by_payment": {
+    "Electronic check": 0.4529,
+    "Mailed check": 0.1911,
+    "Bank transfer (automatic)": 0.1671,
+    "Credit card (automatic)": 0.1524
+  },
+  "churn_by_internet": {
+    "Fiber optic": 0.4189,
+    "DSL": 0.1896,
+    "No": 0.074
+  },
+  "models": {
+    "Logistic Regression": {
+      "roc_auc": 0.846,
+      "recall": 0.797,
+      "precision": 0.519,
+      "f1": 0.628
+    },
+    "Random Forest": {
+      "roc_auc": 0.846,
+      "recall": 0.812,
+      "precision": 0.532,
+      "f1": 0.643
+    }
+  },
+  "best_model": "Logistic Regression",
+  "high_risk_share_of_customers": 0.3447,
+  "high_risk_captures_share_of_churners": 0.7173,
+  "monthly_revenue_lost_to_churn": 139131.0,
+  "share_of_churned_revenue_flagged": 0.7595,
+  "top_drivers_positive": {
+    "InternetService = Fiber optic": 0.64,
+    "Contract = Month-to-month": 0.603,
+    "TotalCharges": 0.517,
+    "PaperlessBilling = Yes": 0.37,
+    "StreamingMovies = Yes": 0.245
+  }
+}
